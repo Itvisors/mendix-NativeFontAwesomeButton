@@ -8,7 +8,7 @@ import { ValueStatus } from "mendix";
 export interface ButtonStyle extends Style {
     container: ViewStyle;
     button: ViewStyle;
-    icon: TextStyle;
+    icon: ViewStyle;
     label: TextStyle;
 }
 

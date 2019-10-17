@@ -13,7 +13,7 @@ export interface FontAwesomeButtonProps {
 }
 
 const defaultButtonStyle: ButtonStyle = {
-    container: styles.flex,
+    container: styles.container,
     button: styles.button,
     icon: styles.icon,
     label: styles.label
@@ -28,11 +28,11 @@ export class FontAwesomeButton extends Component<FontAwesomeButtonProps> {
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (
-                    <TouchableNativeFeedback style={this.styles.badge} onPress={this.props.onClickAction}>
+                    <TouchableNativeFeedback style={this.styles.button} onPress={this.props.onClickAction}>
                         <Text style={this.styles.label}>{this.props.caption}</Text>
                     </TouchableNativeFeedback>
                 ) : (
-                    <TouchableOpacity style={this.styles.badge} onPress={this.props.onClickAction}>
+                    <TouchableOpacity style={this.styles.button} onPress={this.props.onClickAction}>
                         <Text style={this.styles.label}>{this.props.caption}</Text>
                     </TouchableOpacity>
                 )}
