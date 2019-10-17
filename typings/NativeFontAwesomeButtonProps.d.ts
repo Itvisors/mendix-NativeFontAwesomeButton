@@ -3,6 +3,7 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Team
  */
+import { ActionValue, DynamicValue } from "mendix";
 
 interface CommonProps<Style> {
     name: string;
@@ -10,5 +11,8 @@ interface CommonProps<Style> {
 }
 
 export interface NativeFontAwesomeButtonProps<Style> extends CommonProps<Style> {
-    sampleText?: string;
+    caption?: DynamicValue<string>;
+    iconName: string;
+    iconNamePrefix?: string;
+    onClickAction?: ActionValue;
 }

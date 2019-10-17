@@ -1,5 +1,5 @@
 ## NativeFontAwesomeButton
-[Native Font Awesome Button]
+[Mendix Native Font Awesome Button]
 
 ## Features
 [feature highlights]
