@@ -1,0 +1,23 @@
+C:\Program Files\Mendix\8.2.1.59889\modeler\tools\node\node.exe "C:\Program Files\Mendix\8.2.1.59889\modeler\tools\node\node_modules\react-native/local-cli/cli.js" start --port "8083" --config "C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment\native\metro.config.json" --reactNativePath "C:\Program Files\Mendix\8.2.1.59889\modeler\tools\node\node_modules\react-native" 
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  Running Metro Bundler on port 8083.                                         │
+│                                                                              │
+│  Keep Metro running while developing on any JS projects. Feel free to        │
+│  close this tab and run your own Metro instance if you prefer.               │
+│                                                                              │
+│  https://github.com/facebook/react-native                                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Looking for JS files in
+   C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment\native
+   C:/Users/marcel/Documents/GitHub/mendix-NativeFontAwesomeButton/test/theme
+   C:/Users/marcel/Documents/GitHub/mendix-NativeFontAwesomeButton/test/javascriptsource
+   C:/Program Files/Mendix/8.2.1.59889/modeler/tools/node/node_modules
+
+Loading dependency graph, done.
+ BUNDLE  [ios, prod, minified] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (784/784), done.
+
+ BUNDLE  [ios, prod, minified] ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 100.0% (1/1), done.
+

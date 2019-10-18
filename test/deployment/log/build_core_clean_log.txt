@@ -1,0 +1,9 @@
+Buildfile: C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

@@ -1,0 +1,10 @@
+Buildfile: C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 28 files to C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment
+     [copy] Copied 19 empty directories to 1 empty directory under C:\Users\marcel\Documents\GitHub\mendix-NativeFontAwesomeButton\test\deployment
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

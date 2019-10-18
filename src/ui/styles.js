@@ -1,0 +1,27 @@
+import { Platform, StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+    container: {
+        // Ripplecolor and all ViewStyle properties are allowed
+        borderWidth: 1,
+        borderStyle: "solid",
+        borderColor: "#0595DB",
+        backgroundColor: "#0595DB",
+        alignItems: "stretch",
+        justifyContent: "center",
+        borderRadius: 5,
+        paddingVertical: 10,
+        paddingHorizontal: Platform.select({ android: 15, ios: 20 })
+    },
+    // button: {
+    // },
+    icon: {
+        fontSize: 12,
+        color: "#FFFFFF"
+    },
+    label: {
+        textAlign: "center",
+        fontSize: 12,
+        color: "#FFFFFF"
+    }
+});
