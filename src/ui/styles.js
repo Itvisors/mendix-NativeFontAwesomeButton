@@ -13,8 +13,9 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: Platform.select({ android: 15, ios: 20 })
     },
-    // button: {
-    // },
+    buttonView: {
+        flexDirection: "row"
+    },
     icon: {
         fontSize: 12,
         color: "#FFFFFF"
