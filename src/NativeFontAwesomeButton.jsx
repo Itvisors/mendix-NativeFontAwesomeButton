@@ -17,7 +17,7 @@ export class NativeFontAwesomeButton extends Component {
                 onClickAction={this.onClickHandler}
                 caption={caption}
                 iconName={this.props.iconName}
-                iconPrefix={this.props.iconNamePrefix}
+                iconNamePrefix={this.props.iconNamePrefix}
             />
         );
     }

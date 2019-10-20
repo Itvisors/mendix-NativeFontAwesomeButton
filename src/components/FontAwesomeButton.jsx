@@ -25,8 +25,14 @@ export class FontAwesomeButton extends Component {
         if (this.props.caption) {
             textElement = <Text style={this.styles.label}>{this.props.caption}</Text>;
         }
-        // TODO Hier ook de prefix afvangen.
-        var iconElement = <FontAwesomeIcon icon={this.props.iconName} />;
+        // Use prefix when specified.
+        var iconProperty = null;
+        if (this.props.iconNamePrefix) {
+            iconProperty = [this.props.iconNamePrefix, this.props.iconName];
+        } else {
+            iconProperty = this.props.iconName;
+        }
+        var iconElement = <FontAwesomeIcon icon={iconProperty} />;
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (

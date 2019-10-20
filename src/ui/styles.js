@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         borderStyle: "solid",
         borderColor: "#0595DB",
         backgroundColor: "#0595DB",
-        alignItems: "stretch",
+        alignItems: "center",
         justifyContent: "center",
         borderRadius: 5,
         paddingVertical: 10,
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     },
     label: {
         textAlign: "center",
-        fontSize: 12,
+        fontSize: 14,
         color: "#FFFFFF"
     }
 });

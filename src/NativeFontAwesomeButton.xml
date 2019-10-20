@@ -6,7 +6,7 @@
     <name>Native Font Awesome Button</name>
     <description>Mendix Native Font Awesome Button</description>
     <icon>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAABp1BMVEUAAABV//9mzP9LtP9Ms/9Jtv9NsvdJsfpLtPpJsfdJsfhJsvhJsvdKsvdJsPhKsPhJsfdJsPhJsfdIsfhJsfdIsPdJsfhJsfhJsPhJsPhIsfhIsPdJsPdKsPdKsfdNsvdOsvdPs/dQs/dRtPdStPdTtPdUtfdWtvdXtvdauPdcuPdeufdeufhguvhiu/hju/hkvPhmvfhnvfhpvvhrv/huwPhvwfhxwfhywvhzwvh4xfl5xfl6xfl8xvl9xvl9x/mByPmCyfmFyvmGyvmJzPmKzPmLzfmNzvqPzvqQz/qT0PqU0PqU0fqX0vqY0vqa0/qe1fqg1vqj1/uk1/un2fup2vut2/uv3Puw3Puw3fuz3vu13/u23/u34Pu44Pu64fu64fy84vy94vy+4/y/4/zD5fzE5fzG5vzH5vzI5/zK6PzL6PzR6/zT7P3U7P3V7f3W7f3Y7v3Z7v3c8P3e8f3f8f3g8f3i8v3l8/3l9P3n9P3r9v7t9/7u9/7v+P7w+P7x+f7y+f70+v71+v74/P75/P76/f77/f78/f78/v79/v7+/v7////6dMsRAAAAG3RSTlMAAwURGxwhMTNic3SEh4iVp7XBzejt7vH5/f6PsMNWAAABsklEQVR4AWIYfGAUjIJRMAqYuYREJKWJAqLCPGwY+jnFpEkBEryMqPr5pEkFgkwo9kuTDviR/S9GhgFSHAgDuKXJAQIIA4TIMkAcEY4i0mQBVrgBkuQZwA43QJo8wIFhQEhEOIBQOutHJozDOP5Crp4e1RhkJ0tKGJFd6oNEdtmJyEIzpaZl5nrRZgaHM/2Pf5/vwXXfyagXgG93bwSAlEolowLMm9w83gibhXH2gKKVdD67gTnWjwCk+VVjMQS4suSnnjMLRVFc9sAHvAX2A9fySaXNBMbEZVUWscaHIMRuqwBgD8hDEbnsRmfjUKJkAQZGCTlO/xWBwIADQLIZBlY441MvfoF1xlFS/4fy+bzXKh4dgNJE7L3eh3tmtuWa+AMcMIY3dgUvZQpGEYmMw2kD7HC+R29UqyoXLaBd0QZxzgXgikLLDSqJTKU5HOcS0MsbA9jPqtwCRvXm2eorBbNIJBw3KJ9O4Yl+AAXdnyaLt7PWN3jRWLvzmAVp94zO5+n41/onfo/UpExxZqI0O7NQr0DhIq9Io7hQpbRYp7hiobRqo6ByFcNWuY6CUTAKRgEAo8X0lBD3V30AAAAASUVORK5CYII=
+        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
     </icon>
     <properties>
         <propertyGroup caption="General">
@@ -16,7 +16,7 @@
             </property>
             <property key="iconName" type="string">
                 <caption>Icon name</caption>
-                <description>The icon name, like faCheck</description>
+                <description>The icon name, like check</description>
             </property>
             <property key="iconNamePrefix" type="string" required="false">
                 <caption>Icon name prefix</caption>
