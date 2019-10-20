@@ -29,22 +29,17 @@ export class FontAwesomeButton extends Component {
         } else {
             iconProperty = this.props.iconName;
         }
+        var fontAwesomeIcon = <FontAwesomeIcon icon={iconProperty} style={this.styles.icon} />;
         var buttonView;
         if (this.props.caption) {
             buttonView = (
                 <View style={this.styles.buttonView}>
-                    <View style={this.styles.iconWrapper}>
-                        <FontAwesomeIcon icon={iconProperty} />
-                    </View>
+                    <View style={this.styles.iconWrapper}>{fontAwesomeIcon}</View>
                     <Text style={this.styles.label}>{this.props.caption}</Text>
                 </View>
             );
         } else {
-            buttonView = (
-                <View style={this.styles.buttonView}>
-                    <FontAwesomeIcon icon={iconProperty} />
-                </View>
-            );
+            buttonView = <View style={this.styles.buttonView}>{fontAwesomeIcon}</View>;
         }
         return (
             <View style={this.styles.container}>
