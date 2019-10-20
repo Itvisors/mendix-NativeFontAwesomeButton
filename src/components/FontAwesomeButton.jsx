@@ -49,13 +49,9 @@ export class FontAwesomeButton extends Component {
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (
-                    <TouchableNativeFeedback style={this.styles.button} onPress={this.props.onClickAction}>
-                        {buttonView}
-                    </TouchableNativeFeedback>
+                    <TouchableNativeFeedback onPress={this.props.onClickAction}>{buttonView}</TouchableNativeFeedback>
                 ) : (
-                    <TouchableOpacity style={this.styles.button} onPress={this.props.onClickAction}>
-                        {buttonView}
-                    </TouchableOpacity>
+                    <TouchableOpacity onPress={this.props.onClickAction}>{buttonView}</TouchableOpacity>
                 )}
             </View>
         );
