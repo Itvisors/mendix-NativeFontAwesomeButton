@@ -11,6 +11,7 @@ import { styles } from "../ui/styles";
 const defaultButtonStyle = {
     container: styles.container,
     buttonView: styles.buttonView,
+    iconWrapper: styles.iconWrapper,
     icon: styles.icon,
     label: styles.label
 };
@@ -32,22 +33,23 @@ export class FontAwesomeButton extends Component {
         } else {
             iconProperty = this.props.iconName;
         }
-        var iconElement = <FontAwesomeIcon icon={iconProperty} />;
+        var buttonView = (
+            <View style={this.styles.buttonView}>
+                <View style={this.styles.iconWrapper}>
+                    <FontAwesomeIcon icon={iconProperty} />
+                </View>
+                {textElement}
+            </View>
+        );
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (
                     <TouchableNativeFeedback style={this.styles.button} onPress={this.props.onClickAction}>
-                        <View style={this.styles.buttonView}>
-                            {iconElement}
-                            {textElement}
-                        </View>
+                        {buttonView}
                     </TouchableNativeFeedback>
                 ) : (
                     <TouchableOpacity style={this.styles.button} onPress={this.props.onClickAction}>
-                        <View style={this.styles.buttonView}>
-                            {iconElement}
-                            {textElement}
-                        </View>
+                        {buttonView}
                     </TouchableOpacity>
                 )}
             </View>

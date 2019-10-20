@@ -16,6 +16,9 @@ export const styles = StyleSheet.create({
     buttonView: {
         flexDirection: "row"
     },
+    iconWrapper: {
+        marginRight: 10
+    },
     icon: {
         fontSize: 12,
         color: "#FFFFFF"
