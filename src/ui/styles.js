@@ -9,12 +9,12 @@ export const styles = StyleSheet.create({
         backgroundColor: "#0595DB",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 5,
-        paddingVertical: 10,
-        paddingHorizontal: Platform.select({ android: 15, ios: 20 })
+        borderRadius: 5
     },
     buttonView: {
-        flexDirection: "row"
+        flexDirection: "row",
+        paddingVertical: 10,
+        paddingHorizontal: Platform.select({ android: 15, ios: 20 })
     },
     iconWrapper: {
         marginRight: 10

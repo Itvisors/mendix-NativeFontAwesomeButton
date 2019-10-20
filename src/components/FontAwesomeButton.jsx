@@ -22,10 +22,6 @@ export class FontAwesomeButton extends Component {
     render() {
         library.add(far, fas);
         const isAndroid = Platform.OS === "android";
-        var textElement = null;
-        if (this.props.caption) {
-            textElement = <Text style={this.styles.label}>{this.props.caption}</Text>;
-        }
         // Use prefix when specified.
         var iconProperty = null;
         if (this.props.iconNamePrefix) {
@@ -33,14 +29,23 @@ export class FontAwesomeButton extends Component {
         } else {
             iconProperty = this.props.iconName;
         }
-        var buttonView = (
-            <View style={this.styles.buttonView}>
-                <View style={this.styles.iconWrapper}>
+        var buttonView;
+        if (this.props.caption) {
+            buttonView = (
+                <View style={this.styles.buttonView}>
+                    <View style={this.styles.iconWrapper}>
+                        <FontAwesomeIcon icon={iconProperty} />
+                    </View>
+                    <Text style={this.styles.label}>{this.props.caption}</Text>
+                </View>
+            );
+        } else {
+            buttonView = (
+                <View style={this.styles.buttonView}>
                     <FontAwesomeIcon icon={iconProperty} />
                 </View>
-                {textElement}
-            </View>
-        );
+            );
+        }
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (
