@@ -29,7 +29,10 @@ export class FontAwesomeButton extends Component {
         } else {
             iconProperty = this.props.iconName;
         }
-        var fontAwesomeIcon = <FontAwesomeIcon icon={iconProperty} style={this.styles.icon} />;
+        // FontAwesome does not allow setting the icon size using styles. So take size from the icon style.
+        var fontAwesomeIcon = (
+            <FontAwesomeIcon icon={iconProperty} style={this.styles.icon} size={this.styles.icon.size} />
+        );
         var buttonView;
         if (this.props.caption) {
             buttonView = (
