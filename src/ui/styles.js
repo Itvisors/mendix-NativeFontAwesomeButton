@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
         marginRight: 10
     },
     icon: {
-        size: 14,
+        fontSize: 14,
         color: "#FFFFFF"
     },
     label: {

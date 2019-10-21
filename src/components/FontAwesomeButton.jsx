@@ -26,9 +26,9 @@ export class FontAwesomeButton extends Component {
             iconProperty = this.props.iconName;
         }
         // FontAwesome does not allow setting the icon size using styles. So take size from the icon style.
-        var fontAwesomeIcon = (
-            <FontAwesomeIcon icon={iconProperty} style={this.styles.icon} size={this.styles.icon.size} />
-        );
+        // Default style has fontSize, but Mendix classes use size
+        var iconSize = this.styles.icon.fontSize ? this.styles.icon.fontSize : this.styles.icon.size;
+        var fontAwesomeIcon = <FontAwesomeIcon icon={iconProperty} style={this.styles.icon} size={iconSize} />;
         var buttonView;
         if (this.props.caption) {
             buttonView = (
