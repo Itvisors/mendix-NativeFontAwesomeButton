@@ -2,10 +2,7 @@ import { Component, createElement } from "react";
 import { Platform, Text, TouchableNativeFeedback, TouchableOpacity, View } from "react-native";
 
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { far } from "@fortawesome/free-regular-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import { flattenStyles } from "../utils/common";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { styles } from "../ui/styles";
 
 const defaultButtonStyle = {
@@ -20,7 +17,6 @@ export class FontAwesomeButton extends Component {
     styles = flattenStyles(defaultButtonStyle, this.props.style);
 
     render() {
-        library.add(far, fas);
         const isAndroid = Platform.OS === "android";
         // Use prefix when specified.
         var iconProperty = null;

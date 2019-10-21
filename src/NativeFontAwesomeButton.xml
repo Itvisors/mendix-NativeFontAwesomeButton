@@ -10,13 +10,21 @@
     </icon>
     <properties>
         <propertyGroup caption="General">
+            <property key="widgetAction" type="enumeration" defaultValue="icon">
+                <caption>Widget action</caption>
+                <description>On your home page, you need to initialize the library once.</description>
+                <enumerationValues>
+                    <enumerationValue key="icon">Icon</enumerationValue>
+                    <enumerationValue key="initialize">Initialize</enumerationValue>
+                </enumerationValues>
+            </property>
             <property key="caption" type="textTemplate" required="false">
                 <caption>Caption</caption>
                 <description>The button caption, optional</description>
             </property>
-            <property key="iconName" type="string">
+            <property key="iconName" type="string" required="false">
                 <caption>Icon name</caption>
-                <description>The icon name, like check</description>
+                <description>The icon name, like check, may be omitted when initializing the library</description>
             </property>
             <property key="iconNamePrefix" type="string" required="false">
                 <caption>Icon name prefix</caption>
@@ -27,6 +35,10 @@
             <property key="onClickAction" type="action" required="false">
                 <caption>On click action</caption>
                 <description>Action to trigger when button is clicked</description>
+            </property>
+            <property key="onLibraryLoadedAction" type="action" required="false">
+                <caption>Library loaded action</caption>
+                <description>Action to trigger when library is loaded</description>
             </property>
         </propertyGroup>
     </properties>
