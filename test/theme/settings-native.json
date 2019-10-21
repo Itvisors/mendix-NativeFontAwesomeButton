@@ -1017,6 +1017,59 @@
                     }
                 ]
             }
+        ],
+
+        "itvisors.nativefontawesomebutton.NativeFontAwesomeButton": [
+            {
+                "name": "Button style",
+                "type": "Dropdown",
+                "description": "Style of the button.",
+                "options": [
+                    {
+                        "name": "Primary",
+                        "class": "nativeFontAwesomeButtonPrimary"
+                    },
+                    {
+                        "name": "Secondary",
+                        "class": "nativeFontAwesomeButtonSecondary"
+                    },
+                    {
+                        "name": "Success",
+                        "class": "nativeFontAwesomeButtonSuccess"
+                    },
+                    {
+                        "name": "Warning",
+                        "class": "nativeFontAwesomeButtonWarning"
+                    },
+                    {
+                        "name": "Danger",
+                        "class": "nativeFontAwesomeButtonDanger"
+                    },
+                    {
+                        "name": "Dashboard primary",
+                        "class": "nativeFontAwesomeButtonDashboardPrimary"
+                    },
+                    {
+                        "name": "Dashboard success",
+                        "class": "nativeFontAwesomeButtonDashboardSuccess"
+                    },
+                    {
+                        "name": "Dashboard warning",
+                        "class": "nativeFontAwesomeButtonDashboardWarning"
+                    },
+                    {
+                        "name": "Dashboard danger",
+                        "class": "nativeFontAwesomeButtonDashboardDanger"
+                    }
+                ]
+            },
+            {
+                "name": "Transparent button",
+                "type": "Toggle",
+                "description": "Transparent button (no border/background)",
+                "class": "nativeFontAwesomeButtonTransparent"
+            }
+
         ]
     }
 }

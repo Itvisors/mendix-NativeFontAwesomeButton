@@ -7,6 +7,7 @@ import { styles } from "../ui/styles";
 
 const defaultButtonStyle = {
     container: styles.container,
+    touchableContainer: styles.touchableContainer,
     buttonView: styles.buttonView,
     iconWrapper: styles.iconWrapper,
     icon: styles.icon,
@@ -43,9 +44,13 @@ export class FontAwesomeButton extends Component {
         return (
             <View style={this.styles.container}>
                 {isAndroid ? (
-                    <TouchableNativeFeedback onPress={this.props.onClickAction}>{buttonView}</TouchableNativeFeedback>
+                    <TouchableNativeFeedback style={this.styles.touchableContainer} onPress={this.props.onClickAction}>
+                        {buttonView}
+                    </TouchableNativeFeedback>
                 ) : (
-                    <TouchableOpacity onPress={this.props.onClickAction}>{buttonView}</TouchableOpacity>
+                    <TouchableOpacity style={this.styles.touchableContainer} onPress={this.props.onClickAction}>
+                        {buttonView}
+                    </TouchableOpacity>
                 )}
             </View>
         );

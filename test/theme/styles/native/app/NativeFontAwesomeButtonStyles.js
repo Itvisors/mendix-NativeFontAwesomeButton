@@ -1,0 +1,163 @@
+// Native Font Awesome Button styles
+// There is no easy way of getting hold of the theme in a native pluggable widget.
+// Overriding from the theme is way easier.
+
+import { border, brand, button } from "./custom-variables";
+import adjustFont from "./../core/helpers/_functions/adjustfont";
+
+export const nativeFontAwesomeButtonCommon = {
+    container: {
+        borderRadius: border.radius
+    },
+    buttonView: {
+        paddingVertical: button.paddingVertical,
+        paddingHorizontal: button.paddingHorizontal
+    },
+    iconWrapper: {
+        marginRight: 10
+    },
+    icon: {
+        fontSize: button.fontSizeIcon
+    },
+    label: {
+        fontSize: button.fontSize
+    }
+};
+
+export const nativeFontAwesomeButtonPrimary = {
+    ...nativeFontAwesomeButtonCommon,
+    container: {
+        borderColor: brand.primary,
+        backgroundColor: brand.primary
+    },
+    icon: {
+        color: "#FFF"
+    },
+    label: {
+        color: "#FFF"
+    }
+};
+
+export const nativeFontAwesomeButtonSecondary = {
+    ...nativeFontAwesomeButtonCommon,
+    container: {
+        borderColor: brand.primary,
+        backgroundColor: "transparent"
+    },
+    icon: {
+        color: brand.primary
+    },
+    label: {
+        color: brand.primary
+    }
+};
+
+export const nativeFontAwesomeButtonSuccess = {
+    ...nativeFontAwesomeButtonCommon,
+    container: {
+        borderColor: brand.success,
+        backgroundColor: brand.success
+    },
+    icon: {
+        color: "#FFF"
+    },
+    label: {
+        color: "#FFF"
+    }
+};
+
+export const nativeFontAwesomeButtonWarning = {
+    ...nativeFontAwesomeButtonCommon,
+    container: {
+        borderColor: brand.warning,
+        backgroundColor: brand.warning
+    },
+    icon: {
+        color: "#FFF"
+    },
+    label: {
+        color: "#FFF"
+    }
+};
+
+export const nativeFontAwesomeButtonDanger = {
+    ...nativeFontAwesomeButtonCommon,
+    container: {
+        borderColor: brand.danger,
+        backgroundColor: brand.danger
+    },
+    icon: {
+        color: "#FFF"
+    },
+    label: {
+        color: "#FFF"
+    }
+};
+
+export const nativeFontAwesomeButtonDashboardCommon = {
+    container: {
+        borderWidth: 0,
+        borderRadius: 0,
+        backgroundColor: "transparent",
+        paddingVertical: 5,
+        paddingHorizontal: 0,
+        height: 80
+    },
+    buttonView: {
+        flexDirection: "column"
+    },
+    iconWrapper: {
+        marginRight: 0
+    }
+};
+
+export const nativeFontAwesomeButtonDashboardPrimary = {
+    ...nativeFontAwesomeButtonDashboardCommon,
+    icon: {
+        color: brand.primary,
+        fontSize: adjustFont(45)
+    },
+    label: {
+        color: brand.primary
+    }
+};
+
+export const nativeFontAwesomeButtonDashboardSuccess = {
+    ...nativeFontAwesomeButtonDashboardCommon,
+    icon: {
+        color: brand.success,
+        fontSize: adjustFont(45)
+    },
+    label: {
+        color: brand.success
+    }
+};
+
+export const nativeFontAwesomeButtonDashboardWarning = {
+    ...nativeFontAwesomeButtonDashboardCommon,
+    icon: {
+        color: brand.warning,
+        fontSize: adjustFont(45)
+    },
+    label: {
+        color: brand.warning
+    }
+};
+
+export const nativeFontAwesomeButtonDashboardDanger = {
+    ...nativeFontAwesomeButtonDashboardCommon,
+    icon: {
+        color: brand.danger,
+        fontSize: adjustFont(45)
+    },
+    label: {
+        color: brand.danger
+    }
+};
+
+export const nativeFontAwesomeButtonTransparent = {
+    container: {
+        borderColor: "transparent",
+        backgroundColor: "transparent"
+    }
+};

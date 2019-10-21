@@ -7,11 +7,17 @@ export const styles = StyleSheet.create({
         borderStyle: "solid",
         borderColor: "#0595DB",
         backgroundColor: "#0595DB",
-        alignItems: "center",
+        alignItems: "stretch",
         justifyContent: "center",
         borderRadius: 5
     },
+    touchableContainer: {
+        alignItems: "stretch",
+        justifyContent: "center"
+    },
     buttonView: {
+        alignItems: "center",
+        justifyContent: "center",
         flexDirection: "row",
         paddingVertical: 10,
         paddingHorizontal: Platform.select({ android: 15, ios: 20 })
