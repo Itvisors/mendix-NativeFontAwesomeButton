@@ -6,7 +6,7 @@ Use Font Awesome in Mendix Native apps. The widget renders as a button.
 - Fork to use a pro license.
 
 ## Usage
-Place this widget on the page where you want to show a Font Awesome icon. The widget renders as a button, it reacts to the same classes available to default buttons.
+Place this widget on the page where you want to show a Font Awesome icon. The widget renders as a button, it can be styled similar to default buttons.
 
 ## App reload
 During development you may get error messages about icons that could not be found. This happens when the app reloads while on a detail page. The library is not initialized in that case. Just reload the app so it starts at the home page.
