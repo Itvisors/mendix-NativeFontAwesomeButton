@@ -1,8 +1,9 @@
 import { Component, createElement } from "react";
 import { FontAwesomeButton } from "./components/FontAwesomeButton";
 import { View } from "react-native";
-import { far } from "@fortawesome/free-regular-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fal } from "@fortawesome/pro-light-svg-icons";
+import { far } from "@fortawesome/pro-regular-svg-icons";
+import { fas } from "@fortawesome/pro-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 export class NativeFontAwesomeButton extends Component {
@@ -16,7 +17,7 @@ export class NativeFontAwesomeButton extends Component {
         if (this.props.widgetAction === "initialize") {
             // Customize this (and the imports) where applicable.
             // If you have a Pro license, don't just import everything! That would make your app way too large.
-            library.add(far, fas);
+            library.add(fal, far, fas);
 
             const onLibraryLoadedAction = this.props.onLibraryLoadedAction;
             setTimeout(() => {
