@@ -33,4 +33,4 @@ In the container with conditional visibility FontAwesomeInitialized=false place 
 In the container with conditional visibility FontAwesomeInitialized=true, place the normal page content and use this widget to show icons.
 
 ## Known issue with action property
-Currently, choosing 'Save changes' as action causes an error: Can't find variable: closePage. This is not specific to this widget, it happens to default buttons as well. Use a nanoflow instead.
+Currently, choosing 'Save changes' as action causes an error: Can't find variable: closePage. This is not specific to this widget, it happens to default buttons as well. Until the issue is fixed, use a nanoflow instead.
