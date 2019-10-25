@@ -155,9 +155,51 @@ export const nativeFontAwesomeButtonDashboardDanger = {
     }
 };
 
-export const nativeFontAwesomeButtonTransparent = {
+export const nativeFontAwesomeButtonTransparentCommon = {
+    ...nativeFontAwesomeButtonCommon,
     container: {
         borderColor: "transparent",
         backgroundColor: "transparent"
     }
 };
+
+export const nativeFontAwesomeButtonTransparentPrimary = {
+    ...nativeFontAwesomeButtonTransparentCommon,
+    icon: {
+        color: brand.primary
+    },
+    label: {
+        color: brand.primary
+    }
+};
+
+export const nativeFontAwesomeButtonTransparentSuccess = {
+    ...nativeFontAwesomeButtonTransparentCommon,
+    icon: {
+        color: brand.success
+    },
+    label: {
+        color: brand.success
+    }
+};
+
+export const nativeFontAwesomeButtonTransparentWarning = {
+    ...nativeFontAwesomeButtonTransparentCommon,
+    icon: {
+        color: brand.warning
+    },
+    label: {
+        color: brand.warning
+    }
+};
+
+export const nativeFontAwesomeButtonTransparentDanger = {
+    ...nativeFontAwesomeButtonTransparentCommon,
+    icon: {
+        color: brand.danger
+    },
+    label: {
+        color: brand.danger
+    }
+};
+

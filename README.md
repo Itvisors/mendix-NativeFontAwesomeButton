@@ -8,6 +8,9 @@ Use Font Awesome in Mendix Native apps. The widget renders as a button.
 ## Usage
 Place this widget on the page where you want to show a Font Awesome icon. The widget renders as a button, it can be styled similar to default buttons.
 
+## Adjust styling to your theme
+Native pluggable widgets currently cannot access the theme settings of the project they are in. However, it is quite easy to apply your theme on the widget. The test project has an example of this. The widget itself will show as a button with primary color. From the theme a design property is added which allows various button styles. The classes are in NativeFontAwesomeButtonStyles.js and the design property is configured in settings-native.json
+
 ## App reload
 During development you may get error messages about icons that could not be found. This happens when the app reloads while on a detail page. The library is not initialized in that case. Just reload the app so it starts at the home page.
 

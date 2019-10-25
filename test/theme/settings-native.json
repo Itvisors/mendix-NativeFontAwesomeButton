@@ -1060,16 +1060,26 @@
                     {
                         "name": "Dashboard danger",
                         "class": "nativeFontAwesomeButtonDashboardDanger"
+                    },
+                    {
+                        "name": "Transparent primary",
+                        "class": "nativeFontAwesomeButtonTransparentPrimary"
+                    },
+                    {
+                        "name": "Transparent success",
+                        "class": "nativeFontAwesomeButtonTransparentSuccess"
+                    },
+                    {
+                        "name": "Transparent warning",
+                        "class": "nativeFontAwesomeButtonTransparentWarning"
+                    },
+                    {
+                        "name": "Transparent danger",
+                        "class": "nativeFontAwesomeButtonTransparentDanger"
                     }
                 ]
-            },
-            {
-                "name": "Transparent button",
-                "type": "Toggle",
-                "description": "Transparent button (no border/background)",
-                "class": "nativeFontAwesomeButtonTransparent"
             }
-
         ]
     }
 }
+
