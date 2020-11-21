@@ -11,14 +11,15 @@ import { Big } from "big.js";
 // END EXTRA CODE
 
 /**
+ * Get the Mendix Object GUID.
  * @param {MxObject} entityObject - This field is required.
  * @returns {Promise.<string>}
  */
 export async function GetGuid(entityObject) {
 	// BEGIN USER CODE
-  if (!entityObject) {
-    throw new TypeError("Input parameter 'Entity object' is required.");
-  }
-  return entityObject.getGuid();
+    if (!entityObject) {
+        return Promise.reject(new Error("Input parameter 'Entity object' is required."));
+    }
+    return Promise.resolve(entityObject.getGuid());
 	// END USER CODE
 }
