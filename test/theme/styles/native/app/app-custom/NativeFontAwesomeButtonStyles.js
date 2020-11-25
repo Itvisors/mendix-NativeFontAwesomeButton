@@ -2,8 +2,8 @@
 // There is no easy way of getting hold of the theme in a native pluggable widget.
 // Overriding from the theme is way easier.
 
-import { border, brand, button } from "./custom-variables";
-import adjustFont from "./../core/helpers/_functions/adjustfont";
+import { border, brand, button } from "../custom-variables";
+import adjustFont from "./../../core/helpers/_functions/adjustfont";
 
 export const nativeFontAwesomeButtonCommon = {
     container: {
