@@ -1,5 +1,5 @@
 import { Component, createElement } from "react";
-import { Platform, Text, TouchableNativeFeedback, TouchableOpacity, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { flattenStyles } from "../utils/common";
@@ -18,7 +18,6 @@ export class FontAwesomeButton extends Component {
     styles = flattenStyles(defaultButtonStyle, this.props.style);
 
     render() {
-        const isAndroid = Platform.OS === "android";
         // Use prefix when specified.
         var iconProperty = null;
         if (this.props.iconNamePrefix) {
@@ -43,15 +42,7 @@ export class FontAwesomeButton extends Component {
         }
         return (
             <View style={this.styles.container}>
-                {isAndroid ? (
-                    <TouchableNativeFeedback style={this.styles.touchableContainer} onPress={this.props.onClickAction}>
-                        {buttonView}
-                    </TouchableNativeFeedback>
-                ) : (
-                    <TouchableOpacity style={this.styles.touchableContainer} onPress={this.props.onClickAction}>
-                        {buttonView}
-                    </TouchableOpacity>
-                )}
+                <Pressable onPress={this.props.onClickAction}>{buttonView}</Pressable>
             </View>
         );
     }
