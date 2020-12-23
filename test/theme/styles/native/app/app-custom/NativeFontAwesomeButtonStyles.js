@@ -10,8 +10,8 @@ export const nativeFontAwesomeButtonCommon = {
         borderRadius: border.radius
     },
     buttonView: {
-        paddingVertical: button.paddingVertical,
-        paddingHorizontal: button.paddingHorizontal
+        paddingVertical: button.container.paddingVertical,
+        paddingHorizontal: button.container.paddingHorizontal
     },
     iconWrapper: {
         marginRight: 10
