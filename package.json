@@ -1,38 +1,37 @@
 {
   "name": "nativefontawesomebutton",
   "widgetName": "NativeFontAwesomeButton",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Mendix Native Font Awesome Button",
   "copyright": "ITvisors 2019",
   "author": "Marcel Groeneweg",
   "config": {
-    "widgetPath": "./test/widgets",
     "projectPath": "./test/"
   },
   "packagePath": "itvisors",
   "scripts": {
     "start": "npm run dev",
-    "build": "pluggable-widgets-tools build:js:native",
-    "dev": "pluggable-widgets-tools start:js:native",
+    "build": "pluggable-widgets-tools build:native",
+    "dev": "pluggable-widgets-tools start:native",
     "lint": "pluggable-widgets-tools lint",
     "lint:fix": "pluggable-widgets-tools lint:fix",
     "prerelease": "npm run lint",
-    "release": "pluggable-widgets-tools release:js:native"
+    "release": "pluggable-widgets-tools release:native"
   },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Marcel Groeneweg/nativefontawesomebutton/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.2.0"
+    "@mendix/pluggable-widgets-tools": "^8.15.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/pro-light-svg-icons": "^5.11.2",
-    "@fortawesome/pro-regular-svg-icons": "^5.11.2",
-    "@fortawesome/pro-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-native-fontawesome": "^0.1.0",
-    "big.js": "^5.2.2"
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/pro-light-svg-icons": "^5.15.2",
+    "@fortawesome/pro-regular-svg-icons": "^5.15.2",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-native-fontawesome": "^0.2.6",
+    "react-native-svg": "12.0.3"
   }
 }

@@ -23,7 +23,8 @@ public class Paging
 		PageNumber("PageNumber"),
 		IsSortable("IsSortable"),
 		SortAttribute("SortAttribute"),
-		SortAscending("SortAscending");
+		SortAscending("SortAscending"),
+		HasMoreData("HasMoreData");
 
 		private java.lang.String metaName;
 
@@ -252,6 +253,42 @@ public class Paging
 	public final void setSortAscending(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean sortascending)
 	{
 		getMendixObject().setValue(context, MemberNames.SortAscending.toString(), sortascending);
+	}
+
+	/**
+	 * @return value of HasMoreData
+	 */
+	public final java.lang.Boolean getHasMoreData()
+	{
+		return getHasMoreData(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of HasMoreData
+	 */
+	public final java.lang.Boolean getHasMoreData(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.HasMoreData.toString());
+	}
+
+	/**
+	 * Set value of HasMoreData
+	 * @param hasmoredata
+	 */
+	public final void setHasMoreData(java.lang.Boolean hasmoredata)
+	{
+		setHasMoreData(getContext(), hasmoredata);
+	}
+
+	/**
+	 * Set value of HasMoreData
+	 * @param context
+	 * @param hasmoredata
+	 */
+	public final void setHasMoreData(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean hasmoredata)
+	{
+		getMendixObject().setValue(context, MemberNames.HasMoreData.toString(), hasmoredata);
 	}
 
 	/**
