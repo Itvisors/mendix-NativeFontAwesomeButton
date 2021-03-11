@@ -6,6 +6,7 @@
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
 import { Big } from "big.js";
+import Geolocation from '@react-native-community/geolocation';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -27,7 +28,7 @@ import { Big } from "big.js";
 export async function GetCurrentLocation(timeout, maximumAge, highAccuracy) {
 	// BEGIN USER CODE
     if (navigator && navigator.product === "ReactNative" && !navigator.geolocation) {
-        navigator.geolocation = require("@react-native-community/geolocation");
+        navigator.geolocation = Geolocation;
     }
     return new Promise((resolve, reject) => {
         const options = getOptions();
