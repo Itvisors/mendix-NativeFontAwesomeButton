@@ -5,6 +5,9 @@
   "description": "Mendix Native Font Awesome Button",
   "copyright": "ITvisors 2019",
   "author": "Marcel Groeneweg",
+  "engines": {
+    "node": ">=12"
+  },
   "config": {
     "projectPath": "./test/"
   },
@@ -23,12 +26,12 @@
     "url": "https://github.com/Marcel Groeneweg/nativefontawesomebutton/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.14.0"
+    "@mendix/pluggable-widgets-tools": "^8.18.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-regular-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-native-fontawesome": "^0.2.6"
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-native-fontawesome": "^0.2.7"
   }
 }
