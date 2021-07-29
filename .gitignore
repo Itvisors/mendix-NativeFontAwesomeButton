@@ -12,3 +12,6 @@ node_modules/
 .idea/
 *DS_Store*
 .npmrc
+
+/* Ignore the widget itself as it contains the subscription */
+test/widgets/itvisors.NativeFontAwesomeButton.mpk
