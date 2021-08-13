@@ -26,7 +26,7 @@
     "url": "https://github.com/Marcel Groeneweg/nativefontawesomebutton/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.18.3"
+    "@mendix/pluggable-widgets-tools": "^9.4.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
