@@ -26,12 +26,12 @@
     "url": "https://github.com/Marcel Groeneweg/nativefontawesomebutton/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.4.3"
+    "@mendix/pluggable-widgets-tools": "^9.5.4"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-regular-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-native-fontawesome": "^0.2.7"
   }
 }
