@@ -5,9 +5,7 @@
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Native Font Awesome Button</name>
     <description>Mendix Native Font Awesome Button</description>
-    <icon>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAFoUExURSKK5iOK5yKK5iOL6CKK5iOK5yOK5yKK5iOK5yKK5iKK5iKK5iKK5iOL6CKK5iOL6SKK5iKK5iOL6CKK5iKK5v///yKK5h+J5iCJ5vT5/XG07uz1/SGJ5lmn7CGK5iOL5lqn7Lra99bp+i6Q5/H4/bzc9/j7/pfI82Ks7Uie6v7//4jA8er0/SeN522y7kGa6bLW9t3t+6jR9fT5/kSc6iqO5zKS6DGS6EKb6bTX9pnJ8yWM5p/M9CyP5zqX6b7c9zCR6O31/bfZ92iv7vP5/l+q7V2p7dDm+VKj6y2Q52uw7v3+/z2Y6YC78dnr+1al7DeV6Eme6j+Z6SOK5vD3/Wux7u72/SaM5uHv/EKb6r3c92Os7Vin7CSL5pTG84rB8W+z7vr9/iWL5h6I5vP5/eHv+/r8/nW276HN9DaV6I/D8vb6/trr+53L9B+I5pDE8i6R56DN9OXx/JbH83y58HG0716q7SmO5zHAPfEAAAAVdFJOU/pc+QvSYWX7as3m1dQK4wrk4QnLyqOU+HgAAAEYSURBVDjL5dPVbgMxEAVQJw2WacaTrusNc5mZmZmZmdvf70NTqZuN/QO9L7bkI9kaXbMiX4kXFWEuTxnzFaMm5W5Witr4mVcPGMttaO2ACovcunJ4ndxSA7G8m4aLICkB7WcBIMPVIHUPcHd1RkREEhFRkPUNp7eXELqJpJIbE+0DRNycX5qRfwE/PofQUWx7MzrS0rMwOZuYWpwmC6gLQPwEfhI3onNgBHk+sMao/x+gwBzS6+HR1uZwGwDA+FC3bZKvD3urwx2Rpsb+WKh3bNDEfPDy9UhCSuINnV19XKANvJm/HRDCVjn+EYCEqekkfWYhIzRAPr8/7egASjSF/mMo4mQuPahlnkrdeZWDVbj9ylucNY7qb6lCaoYtLYZbAAAAAElFTkSuQmCC
-    </icon>
+    <studioProCategory>Buttons</studioProCategory>
     <properties>
         <propertyGroup caption="General">
             <property key="widgetAction" type="enumeration" defaultValue="icon">
