@@ -12,25 +12,28 @@ export class NativeFontAwesomeButton extends Component {
         super(props);
 
         this.onClickHandler = this.onClick.bind(this);
+        this.state = {
+            initialized: false
+        };
+    }
+
+    componentDidMount() {
+        if (!this.state.initialized && this.props.widgetAction === "initialize") {
+            library.add(fab, fal, far, fas);
+            this.setState({ initialized: true });
+        }
+    }
+
+    componentDidUpdate() {
+        const { onLibraryLoadedAction } = this.props;
+        if (this.state.initialized && onLibraryLoadedAction && onLibraryLoadedAction.canExecute) {
+            onLibraryLoadedAction.execute();
+        }
     }
 
     render() {
-        if (this.props.widgetAction === "initialize") {
-            // Customize this (and the imports) where applicable.
-            // If you have a Pro license, don't just import everything! That would make your app way too large.
-            library.add(fab, fal, far, fas);
-
-            const onLibraryLoadedAction = this.props.onLibraryLoadedAction;
-            setTimeout(() => {
-                if (onLibraryLoadedAction) {
-                    onLibraryLoadedAction.execute();
-                }
-            }, 0);
-            return <View />;
-        }
-
-        const caption = this.props.caption && this.props.caption.value ? this.props.caption.value : "";
-        return (
+        const caption = this.props.caption?.value || "";
+        return this.props.widgetAction === "icon" ? (
             <FontAwesomeButton
                 style={this.props.style}
                 onClickAction={this.onClickHandler}
@@ -38,12 +41,15 @@ export class NativeFontAwesomeButton extends Component {
                 iconName={this.props.iconName}
                 iconNamePrefix={this.props.iconNamePrefix}
             />
+        ) : (
+            <View />
         );
     }
 
     onClick() {
-        if (this.props.onClickAction) {
-            this.props.onClickAction.execute();
+        const { onClickAction } = this.props;
+        if (onClickAction && onClickAction.canExecute) {
+            onClickAction.execute();
         }
     }
 }
