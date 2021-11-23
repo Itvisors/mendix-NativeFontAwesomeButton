@@ -2,6 +2,7 @@ test/deployment/
 test/.classpath
 test/.project
 test/theme/.sass-cache/
+src/shared/
 dist/
 node_modules/
 *.log
