@@ -4,11 +4,26 @@
 
 import { border, brand, button, font } from "../../../../theme/native/custom-variables";
 
+export const itvisors_nativefontawesomebutton_NativeFontAwesomeButton = {
+    container: {
+        borderColor: brand.primary,
+        backgroundColor: brand.primary
+    },
+    buttonView: {
+        minWidth: button.container.minWidth,
+        minHeight: button.container.minHeight,
+        paddingVertical: 13, // To match with input element height
+        paddingHorizontal: button.container.paddingHorizontal
+    }
+};
+
 export const nativeFontAwesomeButtonCommon = {
     container: {
         borderRadius: border.radiusLarge
     },
     buttonView: {
+        minWidth: button.container.minWidth,
+        minHeight: button.container.minHeight,
         paddingVertical: button.container.paddingVertical,
         paddingHorizontal: button.container.paddingHorizontal
     },
