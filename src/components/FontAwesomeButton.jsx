@@ -8,6 +8,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { mergeNativeStyles } from "@mendix/pluggable-widgets-tools";
 import { useMemo } from "react";
 
+// Take care when making changes as the PRO version of the widget will need updating as well
+
 library.add(fab, far, fas);
 
 export function FontAwesomeButton({

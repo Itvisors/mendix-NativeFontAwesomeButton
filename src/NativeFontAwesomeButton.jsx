@@ -1,6 +1,8 @@
 import { FontAwesomeButton } from "./components/FontAwesomeButton";
 import { useCallback } from "react";
 
+// Take care when making changes as the PRO version of the widget will need updating as well
+
 export function NativeFontAwesomeButton(props) {
     const { onClickAction } = props;
     const onClickHandler = useCallback(() => {
