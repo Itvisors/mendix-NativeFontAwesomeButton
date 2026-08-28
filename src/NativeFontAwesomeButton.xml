@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="itvisors.nativefontawesomebutton.NativeFontAwesomeButton" needsEntityContext="true" offlineCapable="true" pluginWidget="true"
+        supportedPlatform="Native" xmlns="http://www.mendix.com/widget/1.0/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Font Awesome Button</name>
+    <description>Mendix Native Font Awesome Button</description>
+    <studioProCategory>Buttons</studioProCategory>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="caption" type="textTemplate" required="false">
+                <caption>Caption</caption>
+                <description>The button caption, optional</description>
+            </property>
+            <property key="iconName" type="string">
+                <caption>Icon name</caption>
+                <description>The icon name, like check</description>
+            </property>
+            <property key="iconNamePrefix" type="string" required="false">
+                <caption>Icon name prefix</caption>
+                <description>Specify the style when multiple variants of the icon exist, like solid or regular. The prefixes work too: fas for solid or far for regular</description>
+            </property>
+            <property key="onClickAction" type="action" required="false">
+                <caption>On click action</caption>
+                <description>Action to trigger when button is clicked</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Accessibility">
+            <property key="a11yEnabled" type="boolean" defaultValue="false">
+                <caption>Accessible</caption>
+                <description></description>
+            </property>
+            <property key="a11yLabel" type="textTemplate" required="false">
+                <caption>Screen reader caption</caption>
+                <description></description>
+            </property>
+            <property key="a11yHint" type="textTemplate" required="false">
+                <caption>Screen reader hint</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
