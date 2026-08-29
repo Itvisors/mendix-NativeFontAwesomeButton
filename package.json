@@ -6,7 +6,7 @@
   "copyright": "ITvisors 2019",
   "author": "Marcel Groeneweg",
   "engines": {
-    "node": ">=16"
+    "node": ">=22"
   },
   "license": "Apache-2.0",
   "config": {

@@ -1,7 +1,4 @@
 export const defaultStyle = {
-    configuration: {
-        useProIcons: false
-    },
     container: {
         borderWidth: 1,
         borderStyle: "solid",
